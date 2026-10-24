@@ -23,7 +23,7 @@ function doPost(e) {
 
     // Se a aba for nova ou estiver vazia, cria o cabeçalho estilizado
     if (sheet.getLastRow() === 0) {
-      var headers = ["Data e Hora", "Nome Completo", "WhatsApp", "Número Limpo", "Ramo / Segmento", "Mensagem / Detalhes", "Origem", "Navegador"];
+      var headers = ["Data e Hora", "Nome Completo", "WhatsApp", "Número Limpo", "Ramo / Segmento", "Formato Reunião", "Mensagem / Detalhes", "Origem", "Navegador"];
       sheet.appendRow(headers);
       
       // Estilização do cabeçalho
@@ -44,6 +44,7 @@ function doPost(e) {
       data.whatsapp || "",
       data.whatsapp_numeros || "",
       data.ramo_atuacao || data.especialidade || "",
+      data.formato_reuniao || "Online via Google Meet",
       data.mensagem || data.desafio_principal || "",
       data.origem || "",
       data.navegador || ""

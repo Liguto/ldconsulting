@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>LD Consulting | Landing Pages de Alta Performance para Negócios & Autônomos</title>
+    <meta name="title" content="LD Consulting | Landing Pages de Alta Performance com Automação Google Sheets">
+    <meta name="description" content="Pare de perder clientes que chegam ao seu perfil ou anúncios. Criamos Landing Pages ultrarrápidas (< 1s) integradas ao WhatsApp que salvam cada lead na sua planilha Google antes do redirecionamento. Orçamento gratuito em reunião de até 1h (online ou presencial).">
+    <meta name="keywords" content="landing page alta conversão, criação de landing page, orçamento gratuito landing page, automação whatsapp, google sheets automação, site para empresas, site comércio local, site prestador de serviços, google apps script">
+    <meta name="author" content="Luiz Augusto Duarte - LD Consulting">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ldconsulting.com.br/">
+    <meta property="og:title" content="Pare de perder clientes que chegam até o seu perfil ou anúncios">
+    <meta property="og:description" content="Landing Pages ultrarrápidas (< 1s) integradas ao WhatsApp que salvam cada contato no Google Sheets. Orçamento gratuito de até 1h (Online ou Presencial).">
+    <meta property="og:image" content="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LD Consulting | Landing Pages de Alta Performance">
+    <meta name="twitter:description" content="Capture e garanta cada lead antes do WhatsApp. Orçamento 100% gratuito em reunião de até 1h (online ou presencial).">
+    <meta name="twitter:image" content="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            accent: '#06b6d4',
+                            emerald: '#10b981'
+                        },
+                        darkbg: '#070D18',
+                        darkcard: '#0E1726',
+                        darkcard2: '#16233B',
+                        darkborder: '#1F2E4A'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #070D18;
+            color: #F8FAFC;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(14, 23, 38, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px -10px rgba(6, 182, 212, 0.25);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #070D18; }
+        ::-webkit-scrollbar-thumb { background: #16233B; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0284c7; }
+    </style>
+</head>
+<body class="bg-darkbg text-slate-100 antialiased selection:bg-brand-accent selection:text-slate-900 relative overflow-x-hidden">
+
+    <!-- Top Alert Bar: Free 1h Meeting Highlight -->
+    <aside aria-label="Aviso Estratégico" class="relative z-50 bg-gradient-to-r from-cyan-950 via-slate-900 to-sky-950 text-xs text-white py-2.5 px-4 text-center font-medium border-b border-cyan-500/20">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                <i class="fa-solid fa-gift mr-1"></i> Orçamento 100% Gratuito
+            </span>
+            <span>Agende uma <strong>Reunião Estratégica de até 1h (Online ou Presencial)</strong> para entender o que você quer e desenhar seu projeto sem compromisso.</span>
+            <a href="#reuniao-gratuita" class="underline font-bold text-cyan-300 hover:text-white ml-1">Entenda como funciona ↓</a>
+        </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-darkbg/90 border-b border-slate-800/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <img src="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg" alt="LD Consulting" class="w-11 h-11 rounded-xl object-cover border border-cyan-500/40 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl font-black tracking-tight text-white font-heading">LD Consulting</span>
+                    </div>
+                    <span class="text-[10px] tracking-wider text-brand-accent font-semibold uppercase block">Landing Pages de Alta Conversão</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+                <a href="#gargalo-bots" class="text-slate-300 hover:text-brand-accent transition-colors">O Gargalo dos Bots</a>
+                <a href="#portfolio" class="text-slate-300 hover:text-brand-accent transition-colors">Portfólio por Nicho</a>
+                <a href="#segredo-tecnico" class="text-slate-300 hover:text-brand-accent transition-colors">Custo Zero de Servidor</a>
+                <a href="#reuniao-gratuita" class="text-emerald-400 font-bold hover:text-emerald-300 transition-colors flex items-center gap-1.5">
+                    <i class="fa-regular fa-clock"></i> Reunião Gratuita (1h)
+                </a>
+                <a href="#depoimentos" class="text-slate-300 hover:text-brand-accent transition-colors">Feedbacks</a>
+                <a href="#sobre-engenheiro" class="text-slate-300 hover:text-brand-accent transition-colors">Engenharia</a>
+                <a href="#faq" class="text-slate-300 hover:text-brand-accent transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="#captura" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-brand-accent to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 transition-all shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Agendar Reunião de 1h
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-toggle" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-drawer" class="hidden lg:hidden bg-darkcard/95 border-b border-slate-800 px-4 pt-3 pb-6 space-y-2">
+            <a href="#gargalo-bots" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">O Gargalo dos Bots</a>
+            <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">Portfólio por Nicho</a>
+            <a href="#segredo-tecnico" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">Custo Zero de Servidor</a>
+            <a href="#reuniao-gratuita" class="block px-3 py-2 rounded-md text-base font-bold text-emerald-400 hover:bg-slate-800">Reunião Gratuita de até 1h (Online/Presencial)</a>
+            <a href="#depoimentos" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">Feedbacks</a>
+            <a href="#sobre-engenheiro" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">Engenharia</a>
+            <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-brand-accent">FAQ</a>
+            <a href="#captura" class="block w-full text-center px-4 py-3 rounded-xl text-base font-bold text-slate-950 bg-brand-accent hover:bg-cyan-300 mt-3">
+                <i class="fa-solid fa-calendar-check mr-1"></i> Quero Meu Orçamento Gratuito (1h)
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="inicio">
+
+        <!-- 1. HERO SECTION (AMPLA E AGRESSIVA COM OFERTA DE REUNIÃO DE 1H) -->
+        <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+            <!-- Background Glow -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-gradient-to-tr from-cyan-600/20 to-emerald-500/10 blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    
+                    <!-- Segment Pill Tag -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Comércio Local • Prestadores de Serviços • Clínicas • Escritórios • Consultorias
+                    </div>
+
+                    <!-- Main Killer Headline -->
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.12]">
+                        Pare de perder clientes que chegam até o seu <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-sky-300 to-emerald-400">perfil ou anúncios.</span>
+                    </h1>
+
+                    <!-- Comprehensive Subheadline -->
+                    <p class="mt-6 text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto">
+                        Criamos <strong>Landing Pages ultrarrápidas</strong> integradas ao seu WhatsApp que salvam automaticamente cada lead em uma <strong>planilha Google segura</strong> antes do redirecionamento. Garanta o contato do seu cliente em tempo real, <strong>independente do seu ramo de atuação.</strong>
+                    </p>
+
+                    <!-- CTAs Group -->
+                    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#captura" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-slate-950 bg-gradient-to-r from-brand-accent to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 transition-all shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-3 group">
+                            <span>Quero Minha Landing Page Inteligente</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#reuniao-gratuita" class="w-full sm:w-auto px-6 py-4 rounded-xl text-sm font-semibold text-white glass-panel hover:bg-slate-800 border-slate-700 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-clock text-emerald-400"></i> Orçamento Grátis (Até 1h)
+                        </a>
+                    </div>
+
+                    <!-- Free 1h Meeting Callout Badge -->
+                    <div class="mt-6 inline-flex flex-col sm:flex-row items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-cyan-950/70 border border-cyan-500/40 text-xs sm:text-sm text-cyan-200 shadow-lg">
+                        <div class="flex items-center gap-2 font-bold text-emerald-400">
+                            <i class="fa-regular fa-clock text-base"></i>
+                            <span>Orçamento Gratuito de até 1h:</span>
+                        </div>
+                        <span class="text-slate-300">Reunião <strong>Online (Google Meet)</strong> ou <strong>Presencial (Campinas e região)</strong> para entender a fundo o seu negócio sem compromisso.</span>
+                    </div>
+
+                    <!-- Trust Metrics Grid -->
+                    <div class="mt-12 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                        <div class="glass-panel p-4 rounded-2xl text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-emerald-400 font-heading">&lt; 1 segundo</div>
+                            <span class="text-xs text-slate-400 font-medium block mt-1">Carregamento no Celular</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-cyan-400 font-heading">R$ 0 / mês</div>
+                            <span class="text-xs text-slate-400 font-medium block mt-1">Sem Custos com Servidor</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-white font-heading">100% Salvo</div>
+                            <span class="text-xs text-slate-400 font-medium block mt-1">Planilha Google Automática</span>
+                        </div>
+                        <div class="glass-panel p-4 rounded-2xl text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-amber-400 font-heading">Até 1h Grátis</div>
+                            <span class="text-xs text-slate-400 font-medium block mt-1">Reunião Online ou Presencial</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SEÇÃO DE QUEBRA DE OBJEÇÃO (O GARGALO UNIVERSAL DO 'JÁ TENHO BOT') -->
+        <section id="gargalo-bots" class="py-20 bg-darkcard/70 border-t border-b border-slate-800/90 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/30 mb-3">
+                        <i class="fa-solid fa-triangle-exclamation"></i> O Gargalo Universal dos Bots
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+                        Por que depender apenas de um robô de WhatsApp está custando caro para o seu negócio?
+                    </h2>
+                    <p class="mt-4 text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Muitos empresários dizem: <em>"Eu não preciso de site, já tenho um robô que atende no WhatsApp"</em>. Esse é o maior ralo de faturamento do mercado atual. A Landing Page não substitui o WhatsApp, <strong>ela é a base que faz o WhatsApp funcionar</strong>:
+                    </p>
+                </div>
+
+                <!-- 3 Universal Comparative Blocks -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Bloco A: O Ponto Cego do Clique -->
+                    <div class="glass-panel p-7 sm:p-8 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-28 h-28 bg-red-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-red-500/15 border border-red-500/30 text-red-400 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-red-400 block mb-1">Gargalo #1</span>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                                "O Ponto Cego do Clique"
+                            </h3>
+
+                            <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                <p>
+                                    <strong class="text-red-400">A armadilha:</strong> Se o cliente clica no link do seu anúncio, o WhatsApp abre e ele desiste no meio do menu do seu bot, você <strong>perdeu o dinheiro investido no anúncio e nunca vai saber quem ele era</strong>.
+                                </p>
+                                <p>
+                                    <strong class="text-emerald-400">Com a nossa página:</strong> Você captura o <strong>Nome e WhatsApp ANTES</strong> do redirecionamento. O lead cai na sua planilha Google em tempo real. Se o cliente abandonar o bot ou não mandar mensagem, sua equipe tem a lista completa para recuperar a venda de forma manual e ativa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-emerald-400 font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle"></i> Recuperação de Vendas Perdidas
+                        </div>
+                    </div>
+
+                    <!-- Bloco B: Visibilidade além do Instagram -->
+                    <div class="glass-panel p-7 sm:p-8 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-28 h-28 bg-sky-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-sky-500/15 border border-sky-500/30 text-sky-400 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-magnifying-glass-location"></i>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400 block mb-1">Gargalo #2</span>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                                "Visibilidade além do Instagram"
+                            </h3>
+
+                            <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                <p>
+                                    <strong class="text-red-400">A armadilha:</strong> Robôs de atendimento <strong>não aparecem nas buscas do Google</strong>. Eles dependem exclusivamente de você pagar anúncios todo santo dia nas redes sociais para gerar qualquer movimento.
+                                </p>
+                                <p>
+                                    <strong class="text-emerald-400">Com a nossa página:</strong> Nossa estrutura utiliza <strong>SEO Técnico avançado</strong> para que seu negócio seja encontrado organicamente no Google por quem já está procurando pelo seu produto ou serviço na sua região, gerando novos clientes sem custos recorrentes de tráfego pago.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-sky-400 font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle"></i> Presença Gratuita no Google
+                        </div>
+                    </div>
+
+                    <!-- Bloco C: Para Qualquer Modelo de Negócio -->
+                    <div class="glass-panel p-7 sm:p-8 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-28 h-28 bg-purple-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-purple-500/15 border border-purple-500/30 text-purple-400 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-purple-400 block mb-1">Gargalo #3</span>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                                "Para Qualquer Modelo de Negócio"
+                            </h3>
+
+                            <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                <p>
+                                    <strong class="text-cyan-300">Universalidade comercial:</strong> Seja você um prestador de serviços, dono de loja física, clínica, consultoria, escritório de advocacia ou infoprodutor.
+                                </p>
+                                <p>
+                                    <strong class="text-emerald-400">O que você realmente precisa:</strong> Se você fecha negócios pelo WhatsApp, você precisa de um <strong>filtro rápido, confiável e profissional que carrega em menos de 1 segundo (PageSpeed nota máxima)</strong>, gerando credibilidade imediata antes de abrir a conversa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-purple-400 font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle"></i> Filtro de Alta Conversão
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. SEÇÃO DE PORTFÓLIO ABRANGENTE (DIFERENTES NICHOS) -->
+        <section id="portfolio" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent block mb-2">Estrutura Versátil</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white">Projetada para Qualquer Ramo de Atuação</h2>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">
+                        Veja como adaptamos a mesma engenharia veloz para diferentes nichos comerciais com nota máxima de performance.
+                    </p>
+                </div>
+
+                <!-- Showcase Grid Multi-Nicho -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Nicho 1: Saúde & Clínicas -->
+                    <div class="glass-panel rounded-3xl overflow-hidden border-slate-800 glass-card-hover flex flex-col justify-between group">
+                        <div>
+                            <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('assets/Medical_clinic_website_UI_design_20261023212247.jpg', 'Saúde, Consultórios & Clínicas')">
+                                <img src="assets/Medical_clinic_website_UI_design_20261023212247.jpg" alt="Saúde e Clínicas" class="w-full h-52 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute top-2.5 left-2.5">
+                                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500 text-slate-950">
+                                        PageSpeed 99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider block mb-1">Nicho 1</span>
+                                <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                                    Saúde, Consultórios & Clínicas
+                                </h3>
+                                <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                                    Para médicos, dentistas, clínicas e fisioterapia. Agendamento simplificado sem atrito e gravação automática na planilha de pacientes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <span class="text-[11px] text-slate-400 font-mono block">Sync Google Sheets</span>
+                        </div>
+                    </div>
+
+                    <!-- Nicho 2: Serviços & Advocacia -->
+                    <div class="glass-panel rounded-3xl overflow-hidden border-slate-800 glass-card-hover flex flex-col justify-between group">
+                        <div>
+                            <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('assets/Law_firm_landing_page_mockup_20261023212247.jpg', 'Serviços Especializados & Advocacia')">
+                                <img src="assets/Law_firm_landing_page_mockup_20261023212247.jpg" alt="Serviços e Advocacia" class="w-full h-52 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute top-2.5 left-2.5">
+                                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500 text-slate-950">
+                                        PageSpeed 98
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[10px] uppercase font-bold text-amber-400 tracking-wider block mb-1">Nicho 2</span>
+                                <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                                    Serviços Especializados & Advocacia
+                                </h3>
+                                <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                                    Para advogados, engenheiros, contadores e consultorias. Triagem de necessidades e captação de clientes qualificados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <span class="text-[11px] text-slate-400 font-mono block">Triagem de Leads</span>
+                        </div>
+                    </div>
+
+                    <!-- Nicho 3: SaaS & Plataformas Digitais -->
+                    <div class="glass-panel rounded-3xl overflow-hidden border-slate-800 glass-card-hover flex flex-col justify-between group">
+                        <div>
+                            <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('assets/Corporate_SaaS_website_UI_layout_20261023212247.jpg', 'SaaS, Startups & Plataformas Digitais')">
+                                <img src="assets/Corporate_SaaS_website_UI_layout_20261023212247.jpg" alt="SaaS e Startups" class="w-full h-52 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute top-2.5 left-2.5">
+                                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500 text-slate-950">
+                                        PageSpeed 99
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[10px] uppercase font-bold text-purple-400 tracking-wider block mb-1">Nicho 3</span>
+                                <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                                    SaaS, Startups & Negócios B2B
+                                </h3>
+                                <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                                    Para empresas de software, produtos digitais e serviços por assinatura. Demonstração e captação para time comercial.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <span class="text-[11px] text-slate-400 font-mono block">Funil B2B / Demonstração</span>
+                        </div>
+                    </div>
+
+                    <!-- Nicho 4: Performance & Vendas / E-commerce -->
+                    <div class="glass-panel rounded-3xl overflow-hidden border-slate-800 glass-card-hover flex flex-col justify-between group">
+                        <div>
+                            <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('assets/Sports_landing_page_web_design_20261023212247.jpg', 'Performance, Vendas & Comércio Local')">
+                                <img src="assets/Sports_landing_page_web_design_20261023212247.jpg" alt="Performance e Comércio" class="w-full h-52 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute top-2.5 left-2.5">
+                                    <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500 text-slate-950">
+                                        PageSpeed 100
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[10px] uppercase font-bold text-emerald-400 tracking-wider block mb-1">Nicho 4</span>
+                                <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                                    Comércio Local & Vendas Rápidas
+                                </h3>
+                                <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                                    Para lojas físicas, estéticas, infoprodutos e eventos. Carregamento em fração de segundo pronto para tráfego pago agressivo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <span class="text-[11px] text-slate-400 font-mono block">Meta Ads & Google Ads</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. SEÇÃO DO SEGREDO TÉCNICO: ENGENHARIA MODERNA, CUSTO ZERO DE MANUTENÇÃO -->
+        <section id="segredo-tecnico" class="py-20 bg-darkcard/80 border-t border-b border-slate-800 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left: Technical Breakdown & Copy -->
+                    <div class="lg:col-span-7">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/10 text-brand-accent border border-cyan-500/30 mb-4">
+                            <i class="fa-solid fa-gears"></i> O Segredo de Engenharia
+                        </div>
+
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+                            Engenharia Moderna, Custo Zero de Manutenção: Como funciona?
+                        </h2>
+
+                        <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            A maioria dos prestadores entrega sites em plataformas antiquadas e cobra mensalidades fixas de servidores de R$ 100 a R$ 400 por mês, além de te empurrar ferramentas complicadas de CRM que só geram dor de cabeça.
+                        </p>
+
+                        <p class="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Aqui aplicamos <strong>Engenharia de Software de Elite</strong>: compilamos microsserviços serverless em <strong>Google Apps Script utilizando a ferramenta profissional Google clasp</strong>. O formulário conversa diretamente com a sua <strong>Planilha Google privada</strong> do seu próprio Gmail empresarial.
+                        </p>
+
+                        <!-- Highlights List -->
+                        <div class="mt-8 space-y-4">
+                            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm sm:text-base">Sem Mensalidades Fixas de Hospedagem</h4>
+                                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Sua página fica distribuída em redes globais ultrarrápidas gratuitas e a automação roda na nuvem do Google. Economia real para o caixa do seu negócio.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-table"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm sm:text-base">Direto na Planilha que Você Já Conhece</h4>
+                                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Você ou sua equipe não precisam aprender novos softwares. Cada lead aparece instantaneamente como uma nova linha no Google Planilhas no seu celular ou computador.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-gauge-high"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm sm:text-base">Carregamento Instantâneo (&lt; 1s)</h4>
+                                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Sem códigos desnecessários e sem travar o navegador do cliente. O clique do anúncio carrega em milissegundos, reduzindo custos por clique.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Technical Architecture Mockup -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-panel p-6 sm:p-7 rounded-3xl border-slate-700 relative shadow-2xl">
+                            <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-5">
+                                <span class="text-xs font-mono text-cyan-400 font-bold">
+                                    <i class="fa-solid fa-network-wired mr-1"></i> Fluxo Nativo LD Consulting
+                                </span>
+                                <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono">
+                                    ● Serverless clasp
+                                </span>
+                            </div>
+
+                            <!-- Visual Step-by-Step Architecture Flow -->
+                            <div class="space-y-4 text-xs font-mono">
+                                <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+                                    <span class="text-cyan-400 font-bold block mb-1">1. ENTRADA DO CLIENTE</span>
+                                    Clica no anúncio, perfil ou Google -> Landing Page abre em &lt; 0.8s.
+                                </div>
+
+                                <div class="text-center text-cyan-400 text-sm">
+                                    <i class="fa-solid fa-arrow-down animate-bounce"></i>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl bg-slate-900 border border-emerald-500/40 shadow-md">
+                                    <span class="text-emerald-400 font-bold block mb-1">2. CAPTURA APPS SCRIPT</span>
+                                    Gera o registro e salva na Planilha Google do cliente em 300ms.
+                                </div>
+
+                                <div class="text-center text-cyan-400 text-sm">
+                                    <i class="fa-solid fa-arrow-down animate-bounce"></i>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+                                    <span class="text-purple-400 font-bold block mb-1">3. CONVERSÃO NO WHATSAPP</span>
+                                    WhatsApp abre com mensagem pré-preenchida para fechamento imediato.
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-4 border-t border-slate-800 text-center">
+                                <span class="text-xs text-slate-300 block">
+                                    Arquitetado por <strong>Luiz Augusto Duarte</strong><br>
+                                    <span class="text-[11px] text-slate-400">Bacharel UNICAMP • MBA Arquitetura de Software</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: DIAGNÓSTICO & ORÇAMENTO GRATUITO (ATÉ 1H DE REUNIÃO ONLINE OU PRESENCIAL) -->
+        <section id="reuniao-gratuita" class="py-20 bg-gradient-to-b from-darkbg via-cyan-950/20 to-darkbg border-t border-b border-cyan-500/30 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 mb-3">
+                        <i class="fa-solid fa-calendar-check"></i> Sem Custo • Sem Compromisso
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
+                        Orçamento 100% Gratuito em uma Reunião de até 1 Hora
+                    </h2>
+                    <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Não passamos tabelas de preços frias ou genéricas por mensagem. Nós sentamos com você por <strong>até 1 hora</strong> para entender o seu público, de onde vêm seus clientes, como funciona o seu atendimento e desenhar a Landing Page exata para o seu objetivo.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1: Reunião Dedicada -->
+                    <div class="glass-panel p-7 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl mb-5">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Até 1 Hora Dedicada</h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                                Uma sessão de diagnóstico estratégico onde mapeamos suas metas, seus diferenciais e identificamos onde você está perdendo vendas hoje.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-cyan-300 font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-check text-emerald-400"></i> Consultoria sem custo
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Formato Flexível -->
+                    <div class="glass-panel p-7 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-5">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Online ou Presencial</h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                                Você escolhe o melhor formato: <strong>Reunião Online via Google Meet</strong> (de qualquer lugar do Brasil) ou <strong>Reunião Presencial</strong> (para clientes de Campinas e região metropolitana).
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-check text-emerald-400"></i> Máxima flexibilidade
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Proposta Sem Compromisso -->
+                    <div class="glass-panel p-7 rounded-3xl border-slate-800 glass-card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-5">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Proposta Transparente</h3>
+                            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                                Ao final da reunião, você recebe um escopo técnico desenhado para o seu nicho com prazo garantido de entrega e valor transparente, sem nenhuma obrigação de contratação.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 text-[11px] text-purple-300 font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-check text-emerald-400"></i> Decisão 100% segura
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="#captura" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-sm sm:text-base text-slate-950 bg-gradient-to-r from-brand-accent to-emerald-400 hover:opacity-95 shadow-xl shadow-cyan-500/20 transition-all">
+                        <span>Quero Agendar Minha Reunião Gratuita de até 1h</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. FORMULÁRIO DE CAPTURA COM CÓDIGO FRONTEND -->
+        <section id="captura" class="py-20 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="glass-panel p-6 sm:p-10 md:p-12 rounded-3xl border-cyan-500/30 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-20 -right-20 w-80 h-80 bg-brand-accent/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-accent/20 text-brand-accent border border-brand-accent/30 inline-block mb-3">
+                            <i class="fa-solid fa-calendar-check mr-1"></i> Agende Seu Orçamento Gratuito (Até 1h)
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white">
+                            Solicite Sua Reunião Estratégica Gratuita
+                        </h2>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3">
+                            Preencha os campos abaixo. Você será conectado imediatamente ao WhatsApp de Luiz Augusto Duarte para combinarmos o dia e horário da sua reunião gratuita (online ou presencial).
+                        </p>
+                    </div>
+
+                    <!-- Capture Form -->
+                    <form id="lead-capture-form" class="space-y-5" novalidate>
+                        
+                        <!-- Campo 1: Nome -->
+                        <div>
+                            <label for="lead-name" class="block text-xs sm:text-sm font-bold text-slate-200 mb-1.5">
+                                Seu Nome Completo *
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <input type="text" id="lead-name" name="nome" required placeholder="Ex: Lucas Ferreira ou Dra. Mariana" class="w-full pl-10 pr-4 py-3.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all">
+                            </div>
+                            <span id="error-name" class="text-[11px] text-red-400 mt-1 hidden">Por favor, informe seu nome.</span>
+                        </div>
+
+                        <!-- Campo 2: WhatsApp com máscara brasileira -->
+                        <div>
+                            <label for="lead-phone" class="block text-xs sm:text-sm font-bold text-slate-200 mb-1.5">
+                                Seu WhatsApp com DDD * (Salvo na planilha antes do chat)
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-emerald-400">
+                                    <i class="fa-brands fa-whatsapp text-base"></i>
+                                </div>
+                                <input type="tel" id="lead-phone" name="whatsapp" required maxlength="15" placeholder="(19) 99798-1104" class="w-full pl-10 pr-4 py-3.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all">
+                            </div>
+                            <span id="error-phone" class="text-[11px] text-red-400 mt-1 hidden">Informe um número de WhatsApp válido com DDD.</span>
+                        </div>
+
+                        <!-- Campo 3: Ramo de Atuação / Segmento -->
+                        <div>
+                            <label for="lead-segment" class="block text-xs sm:text-sm font-bold text-slate-200 mb-1.5">
+                                Qual o Seu Ramo de Atuação ou Tipo de Negócio? *
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <select id="lead-segment" name="ramo_atuacao" required class="w-full pl-10 pr-4 py-3.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all">
+                                    <option value="" disabled selected>Selecione seu segmento...</option>
+                                    <option value="Prestador de Serviços">Prestador de Serviços em Geral</option>
+                                    <option value="Comércio Local / Loja Física">Comércio Local / Loja Física</option>
+                                    <option value="Clínica / Saúde / Consultório">Clínica / Saúde / Consultório</option>
+                                    <option value="Escritório de Advocacia / Jurídico">Escritório de Advocacia / Jurídico</option>
+                                    <option value="Consultoria / B2B">Consultoria / Empresa B2B</option>
+                                    <option value="E-commerce / Infoproduto">E-commerce / Produtos Digitais</option>
+                                    <option value="Outro Profissional Autônomo">Outro Profissional Autônomo</option>
+                                </select>
+                            </div>
+                            <span id="error-segment" class="text-[11px] text-red-400 mt-1 hidden">Selecione o seu ramo de atuação.</span>
+                        </div>
+
+                        <!-- Campo 4: Formato Desejado para a Reunião Gratuita de até 1h -->
+                        <div>
+                            <label class="block text-xs sm:text-sm font-bold text-slate-200 mb-2">
+                                Como prefere realizar a reunião gratuita de até 1h? *
+                            </label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer hover:border-brand-accent transition-all">
+                                    <input type="radio" name="formato_reuniao" value="Online via Google Meet" checked class="accent-brand-accent w-4 h-4">
+                                    <span class="text-xs sm:text-sm text-slate-200 font-medium">
+                                        <i class="fa-solid fa-video text-cyan-400 mr-1.5"></i> Reunião Online (Google Meet)
+                                    </span>
+                                </label>
+                                <label class="flex items-center gap-3 p-3.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer hover:border-brand-accent transition-all">
+                                    <input type="radio" name="formato_reuniao" value="Presencial (Campinas e Região)" class="accent-brand-accent w-4 h-4">
+                                    <span class="text-xs sm:text-sm text-slate-200 font-medium">
+                                        <i class="fa-solid fa-handshake text-emerald-400 mr-1.5"></i> Presencial (Campinas e Região)
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Campo 5: Mensagem / Detalhes (Opcional) -->
+                        <div>
+                            <label for="lead-message" class="block text-xs sm:text-sm font-bold text-slate-200 mb-1.5">
+                                Mensagem ou Desafio Atual (Opcional):
+                            </label>
+                            <textarea id="lead-message" name="mensagem" rows="3" placeholder="Ex: Anuncio no Instagram mas sinto que muitos cliques não chegam até a conversa..." class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-accent transition-all"></textarea>
+                        </div>
+
+                        <!-- Submit Button with Dynamic States -->
+                        <div class="pt-3">
+                            <button type="submit" id="submit-btn" class="w-full py-4 px-6 rounded-xl font-black text-slate-950 bg-gradient-to-r from-brand-accent via-cyan-300 to-emerald-400 hover:opacity-95 transition-all text-sm sm:text-base flex items-center justify-center gap-2 shadow-xl shadow-cyan-500/25">
+                                <i class="fa-solid fa-calendar-check text-base"></i>
+                                <span id="submit-btn-text">Agendar Reunião Gratuita de 1h no WhatsApp</span>
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-[11px] text-center text-slate-400 mt-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i> Seus dados são salvos com segurança via Google Apps Script e você fala diretamente com o engenheiro responsável.
+                        </p>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. SEÇÃO DE PROVA SOCIAL & DEPOIMENTOS REAIS -->
+        <section id="depoimentos" class="py-20 bg-darkcard/40 border-t border-slate-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-14">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Comprovações Reais</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Resultados de Quem Já Blindou o Seu Tráfego</h2>
+                    <p class="mt-2 text-slate-400 text-sm max-w-xl mx-auto">
+                        Feedbacks reais recebidos diretamente no WhatsApp sobre o impacto imediato das nossas páginas.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    
+                    <!-- Feedback 1: Claudio -->
+                    <div class="glass-panel p-6 sm:p-7 rounded-3xl border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-11 h-11 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm sm:text-base">Claudio (Cliente LD Consulting)</h4>
+                                    <span class="text-xs text-slate-400">Site Novo + Botão WhatsApp Integrado</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-2xl overflow-hidden border border-slate-700/80 mb-4 cursor-pointer" onclick="openLightbox('assets/Client_praising_website_in_chat_20261023212247.jpg', 'Feedback de Cliente no WhatsApp')">
+                                <img src="assets/Client_praising_website_in_chat_20261023212247.jpg" alt="Print WhatsApp Claudio" class="w-full max-h-64 object-cover object-top hover:scale-102 transition-transform">
+                            </div>
+
+                            <p class="text-slate-300 text-xs sm:text-sm italic">
+                                "Luiz, o site ficou fantástico! É muito rápido e bonito. Já recebi meu primeiro contato de cliente pelo botão do WhatsApp hoje! Muito obrigado pelo trabalho na LD Consulting."
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-emerald-400 font-semibold">
+                            <span><i class="fa-solid fa-circle-check"></i> Conversão no Primeiro Dia</span>
+                            <span class="text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Feedback 2: Thiago Andrade -->
+                    <div class="glass-panel p-6 sm:p-7 rounded-3xl border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-11 h-11 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm sm:text-base">Thiago Andrade</h4>
+                                    <span class="text-xs text-slate-400">Indicação de Automação & Site</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-2xl overflow-hidden border border-slate-700/80 mb-4 cursor-pointer" onclick="openLightbox('assets/WhatsApp_message_about_IT_referral_20261023212247.jpg', 'Indicação Profissional no WhatsApp')">
+                                <img src="assets/WhatsApp_message_about_IT_referral_20261023212247.jpg" alt="Print WhatsApp Thiago" class="w-full max-h-64 object-cover object-top hover:scale-102 transition-transform">
+                            </div>
+
+                            <p class="text-slate-300 text-xs sm:text-sm italic">
+                                "Luiz, te indiquei pra um amigo que tá precisando de um site profissional e de automação pra empresa dele. Falei que você é o cara da TI! Ele vai te chamar por aqui no WhatsApp."
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-cyan-400 font-semibold">
+                            <span><i class="fa-solid fa-circle-check"></i> Reconhecimento & Confiança</span>
+                            <span class="text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. SOBRE O ENGENHEIRO (AUTORIDADE TÉCNICA) -->
+        <section id="sobre-engenheiro" class="py-16 bg-slate-900/60 border-t border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl border-slate-800 flex flex-col md:flex-row items-center gap-6">
+                    <img src="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg" alt="Luiz Augusto Duarte" class="w-24 h-24 rounded-2xl object-cover border border-cyan-500/40 shrink-0">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full text-[11px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 mb-2">
+                            Engenharia de Software de Elite
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Sua página não é feita por amadores de "arrastar e soltar"</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                            Desenvolvida por <strong>Luiz Augusto Duarte</strong> — Bacharel em Sistemas de Informação pela <strong>UNICAMP</strong> e pós-graduado (MBA) em <strong>Arquitetura de Software Full Cycle</strong>. Com sólida experiência no <strong>Instituto de Pesquisas Eldorado</strong> (atualização Android Motorola) e certificações em <strong>Google Cloud</strong> e <strong>IA Generativa</strong>, garantimos arquitetura limpa, segurança de dados e velocidade de carregamento que agências convencionais de WordPress não conseguem atingir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ (PERGUNTAS FREQUENTES) -->
+        <section id="faq" class="py-20 bg-darkcard/50 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent block mb-1">Perguntas Frequentes</span>
+                    <h2 class="text-3xl font-black text-white">Dúvidas Comuns sobre o Sistema</h2>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <div class="glass-panel rounded-2xl border border-slate-800 p-5 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Como funciona o orçamento gratuito e a reunião de até 1h?</h4>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3 hidden leading-relaxed">
+                            Agendamos uma conversa dedicada de até 60 minutos, podendo ser 100% online (via Google Meet) ou presencial (para clientes de Campinas e região). Nessa sessão, entendemos em detalhes o que você busca, como seus clientes chegam e estruturamos uma proposta com escopo claro e custo zero de compromisso.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl border border-slate-800 p-5 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Essa Landing Page serve para o meu tipo de negócio?</h4>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3 hidden leading-relaxed">
+                            Sim! Se você atende ou fecha clientes pelo WhatsApp (comércio local, prestador de serviços, consultorias, clínicas, escritórios, estética ou infoprodutos), você precisa de uma página que carrega instantaneamente para passar credibilidade e salvar o contato do cliente antes de abrir o chat.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl border border-slate-800 p-5 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Já tenho um bot no WhatsApp. Preciso mesmo de uma página?</h4>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3 hidden leading-relaxed">
+                            Com certeza. O robô só atende quem digita a primeira mensagem no chat. A nossa Landing Page captura os dados antes, garantindo que mesmo se a pessoa não digitar nada no WhatsApp ou fechar o app, você tenha o contato salvo na planilha para sua equipe entrar em contato e fechar a venda.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl border border-slate-800 p-5 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Em quanto tempo a página fica no ar?</h4>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3 hidden leading-relaxed">
+                            O prazo padrão de entrega é de <strong>5 a 7 dias úteis</strong> após o alinhamento das informações e fotos. Entregamos a página completa, testada no PageSpeed, integrada com a sua planilha Google e conectada ao seu WhatsApp oficial.
+                        </p>
+                    </div>
+
+                    <div class="glass-panel rounded-2xl border border-slate-800 p-5 cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Vou ter mensalidades de hospedagem ou CRM?</h4>
+                            <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-3 hidden leading-relaxed">
+                            <strong>Não!</strong> Utilizamos arquitetura serverless estática que roda gratuitamente em redes globais CDN com SSL/HTTPS incluso, e a automação roda no seu próprio Google Sheets através do Google Apps Script. Você não paga mensalidades de hospedagem pesada ou CRMs caros.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/90 py-12 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <img src="assets/Metallic_monogram_logo_emblem_LD_20261023212247.jpg" alt="LD Logo" class="w-9 h-9 rounded-lg object-cover border border-cyan-500/30">
+                <div>
+                    <span class="text-white font-bold text-sm block leading-none font-heading">LD Consulting</span>
+                    <span class="text-[10px] text-brand-accent">Luiz Augusto Duarte • CRO & Automação</span>
+                </div>
+            </div>
+
+            <p class="text-center md:text-left">
+                © 2026 LD Consulting. Todos os direitos reservados.<br>
+                Landing Pages de Alta Performance • Automação Google Sheets • Orçamento Gratuito de até 1h.
+            </p>
+
+            <div class="flex items-center space-x-5 text-slate-400 text-xl">
+                <a href="https://www.linkedin.com/in/luizduarte1" target="_blank" class="hover:text-cyan-400 transition-colors" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/5519997981104" target="_blank" class="hover:text-emerald-400 transition-colors" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:luizduarte_@live.com" class="hover:text-cyan-400 transition-colors" title="E-mail">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/5519997981104?text=Ol%C3%A1%20Luiz!%20Vim%20pelo%20site%20da%20LD%20Consulting%20e%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20gratuita%20de%20or%C3%A7amento%20de%20at%C3%A9%201h." target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-400 text-slate-950 rounded-full flex items-center justify-center text-2xl shadow-2xl shadow-emerald-500/40 transition-all hover:scale-110 group" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute -top-1 -right-1 flex h-4 w-4">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-300"></span>
+        </span>
+    </a>
+
+    <!-- Lightbox Modal for Portfolio Inspection -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 backdrop-blur-md hidden p-4" onclick="closeLightbox(event)">
+        <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <div class="p-4 bg-slate-950/80 border-b border-slate-800 flex items-center justify-between">
+                <h4 id="lightbox-title" class="text-sm font-bold text-white">Visualização de Caso</h4>
+                <button onclick="closeLightbox(event)" class="text-slate-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-2 sm:p-4 max-h-[80vh] overflow-y-auto flex items-center justify-center">
+                <img id="lightbox-img" src="" alt="Case Preview" class="max-w-full max-h-[72vh] rounded-lg object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- JAVASCRIPT: CAPTURA DE LEAD, MÁSCARA WHATSAPP & REDIRECIONAMENTO COM FETCH -->
+    <!-- ========================================================================= -->
+    <script>
+        // Configuração do WhatsApp Oficial de Luiz Augusto Duarte
+        const OFFICIAL_WHATSAPP_NUMBER = "5519997981104";
+
+        /**
+         * ENDPOINT DO GOOGLE APPS SCRIPT (Web App URL implantada via Google clasp)
+         */
+        const APPS_SCRIPT_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx_LD_CONSULTING_APPS_SCRIPT_URL/exec";
+
+        // Elementos do DOM
+        const form = document.getElementById('lead-capture-form');
+        const phoneInput = document.getElementById('lead-phone');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitBtnText = document.getElementById('submit-btn-text');
+
+        // 1. MÁSCARA AUTOMÁTICA DE WHATSAPP BRASILEIRO: (XX) XXXXX-XXXX
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, ""); // Remove não dígitos
+            if (value.length > 11) value = value.slice(0, 11);
+
+            if (value.length > 10) {
+                // Formato Celular: (XX) 9XXXX-XXXX
+                value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+            } else if (value.length > 6) {
+                // Parcial
+                value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+            } else if (value.length > 2) {
+                value = value.replace(/^(\d{2})(\d{0,5})$/, "($1) $2");
+            } else if (value.length > 0) {
+                value = value.replace(/^(\d*)$/, "($1");
+            }
+            e.target.value = value;
+        });
+
+        // 2. INTERCEPTAÇÃO DO SUBMIT & FETCH COM REDIRECIONAMENTO
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Obtenção dos valores
+            const name = document.getElementById('lead-name').value.trim();
+            const phone = document.getElementById('lead-phone').value.trim();
+            const segment = document.getElementById('lead-segment').value;
+            const message = document.getElementById('lead-message').value.trim();
+            const meetingFormat = document.querySelector('input[name="formato_reuniao"]:checked')?.value || "Online via Google Meet";
+
+            // Validações simples com feedback visual
+            let hasError = false;
+
+            if (!name) {
+                document.getElementById('error-name').classList.remove('hidden');
+                hasError = true;
+            } else {
+                document.getElementById('error-name').classList.add('hidden');
+            }
+
+            const cleanPhone = phone.replace(/\D/g, "");
+            if (!cleanPhone || cleanPhone.length < 10) {
+                document.getElementById('error-phone').classList.remove('hidden');
+                hasError = true;
+            } else {
+                document.getElementById('error-phone').classList.add('hidden');
+            }
+
+            if (!segment) {
+                document.getElementById('error-segment').classList.remove('hidden');
+                hasError = true;
+            } else {
+                document.getElementById('error-segment').classList.add('hidden');
+            }
+
+            if (hasError) return;
+
+            // Preparação dos dados no formato JSON
+            const payload = {
+                timestamp: new Date().toISOString(),
+                nome: name,
+                whatsapp: phone,
+                whatsapp_numeros: cleanPhone,
+                ramo_atuacao: segment,
+                formato_reuniao: meetingFormat,
+                mensagem: message || "Sem mensagem adicional",
+                origem: window.location.href,
+                navegador: navigator.userAgent
+            };
+
+            // Feedback visual no botão de submit
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            submitBtnText.innerText = "Salvando na Planilha Google e Conectando...";
+
+            // Montagem da mensagem personalizada para o WhatsApp com o primeiro nome do lead
+            const greetingName = name.split(' ')[0] || name;
+            let whatsappMessage = `Olá Luiz! Meu nome é ${greetingName}, atuo com *${segment}* e acabei de preencher o formulário no site da LD Consulting.%0A%0A*WhatsApp:* ${phone}%0A*Formato da Reunião (até 1h):* ${meetingFormat}`;
+            if (message) {
+                whatsappMessage += `%0A*Mensagem:* ${encodeURIComponent(message)}`;
+            }
+            whatsappMessage += `%0A%0AGostaria de agendar nossa reunião gratuita de até 1h para entender as possibilidades e montar o orçamento para o meu negócio!`;
+
+            const whatsappUrl = `https://wa.me/${OFFICIAL_WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+
+            try {
+                // Envio assíncrono via fetch() para o Apps Script
+                if (APPS_SCRIPT_WEBHOOK_URL && !APPS_SCRIPT_WEBHOOK_URL.includes("AKfycbx_LD_CONSULTING")) {
+                    await fetch(APPS_SCRIPT_WEBHOOK_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                } else {
+                    // Armazenamento local de contingência (garante que nada seja perdido)
+                    const existingLeads = JSON.parse(localStorage.getItem('ld_leads') || '[]');
+                    existingLeads.push(payload);
+                    localStorage.setItem('ld_leads', JSON.stringify(existingLeads));
+                    console.info("[LD Consulting] Lead salvo em contingência local e pronto para o WhatsApp:", payload);
+                }
+            } catch (err) {
+                console.warn("[LD Consulting] Aviso de envio:", err);
+            } finally {
+                // Redirecionamento imediato para o WhatsApp
+                setTimeout(() => {
+                    window.location.href = whatsappUrl;
+                }, 350);
+            }
+        });
+
+        // 3. MENU MOBILE DRAWER
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        mobileToggle.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        // 4. FAQ ACCORDION
+        function toggleFaq(element) {
+            const p = element.querySelector('p');
+            const icon = element.querySelector('i');
+            p.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // 5. LIGHTBOX MODAL
+        function openLightbox(src, title) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function closeLightbox(e) {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
